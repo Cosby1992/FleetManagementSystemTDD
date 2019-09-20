@@ -77,6 +77,18 @@ public class ContatinerShipTest {
 
     }
 
+    @Test
+    void changeCargoDesription(){
+
+        ContainerShip ship = getNewHansaCarrier();
+
+        ship.setCargoDescription("Nike Shoes");
+
+        assertEquals("Nike Shoes", ship.getCargoDescription());
+        
+
+    }
+
 
 
 }
