@@ -15,9 +15,12 @@ class StatusTest {
     void StatusTest(){
 
         Status status = Status.DOCKED_AT_HOME;
+        Status status1 = Status.DOCKED_AWAY;
+        Status status2 = Status.ON_VOYAGE;
 
         assertEquals("Docked at home", status.getDescription());
-
+        assertEquals("Docked away", status1.getDescription());
+        assertEquals("On voyage...", status2.getDescription());
 
     }
 
