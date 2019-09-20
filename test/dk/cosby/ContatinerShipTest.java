@@ -35,7 +35,7 @@ public class ContatinerShipTest {
         assertEquals("Hansa Carrier", containerShip.getName());
         assertEquals(LocalDate.of(1989,2,1), containerShip.getLaunchDate());
         assertEquals(26366, containerShip.getDeadweightTonnage());
-//        assertEquals(16020, containerShip.getContainerCount());
+        assertEquals(1799, containerShip.getContainerCount());
 //        assertEquals("Empty", containerShip.getCargoDescription());
 //        assertEquals(Status.DOCKED_AT_HOME, containerShip.getStatus());
 
