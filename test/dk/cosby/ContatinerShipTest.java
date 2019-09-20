@@ -39,7 +39,7 @@ public class ContatinerShipTest {
         assertEquals(26366, containerShip.getDeadweightTonnage());
         assertEquals(1799, containerShip.getContainerCount());
         assertEquals("Empty", containerShip.getCargoDescription());
-//        assertEquals(Status.DOCKED_AT_HOME, containerShip.getStatus());
+        assertEquals(Status.DOCKED_AT_HOME, containerShip.getStatus());
 
     }
 
