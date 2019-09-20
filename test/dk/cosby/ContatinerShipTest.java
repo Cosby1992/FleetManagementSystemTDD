@@ -85,7 +85,17 @@ public class ContatinerShipTest {
         ship.setCargoDescription("Nike Shoes");
 
         assertEquals("Nike Shoes", ship.getCargoDescription());
-        
+
+        ship.setStatus(Status.ON_VOYAGE);
+        ship.setCargoDescription("Sex Dolls");
+
+        assertEquals("Nike Shoes", ship.getCargoDescription());
+
+        ship.setStatus(Status.DOCKED_AWAY);
+        ship.setCargoDescription("Sex Dolls");
+
+        assertEquals("Sex Dolls", ship.getCargoDescription());
+
 
     }
 

@@ -64,4 +64,11 @@ public class ContainerShip {
     }
 
 
+    public void setCargoDescription(String cargoDescription) {
+
+        if(status != Status.ON_VOYAGE){
+            this.cargoDescription = cargoDescription;
+        }
+
+    }
 }
