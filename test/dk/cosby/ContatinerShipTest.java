@@ -43,17 +43,31 @@ public class ContatinerShipTest {
 
     }
 
-    private ContainerShip getHansaCarrier(){
+    private ContainerShip getNewHansaCarrier(){
         return new ContainerShip("Hansa Carrier", LocalDate.of(1989, 2, 1), 26366,
                 1799, "Empty", Status.DOCKED_AT_HOME);
     }
 
     @Test
     void changeNameTest(){
-        ContainerShip containerShip = getHansaCarrier();
+        ContainerShip containerShip = getNewHansaCarrier();
         containerShip.setName("Ocean Hope");
 
         assertEquals("Ocean Hope", containerShip.getName());
+    }
+
+    @Test
+    void setStatusTest(){
+
+        ContainerShip containerShip = getNewHansaCarrier();
+
+        assertEquals(Status.DOCKED_AT_HOME, containerShip.getStatus());
+
+        containerShip.setStatus(Status.ON_VOYAGE);
+
+        assertEquals(Status.ON_VOYAGE, containerShip.getStatus());
+
+
     }
 
 
