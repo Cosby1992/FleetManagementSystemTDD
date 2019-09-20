@@ -23,4 +23,8 @@ public class ContainerShip {
     public int getDeadweightTonnage() {
         return 187625;
     }
+
+    public int getContainerCount() {
+        return 16020;
+    }
 }
