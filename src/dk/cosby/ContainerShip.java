@@ -5,9 +5,11 @@ import java.time.LocalDate;
 public class ContainerShip {
 
     private String name;
+    private LocalDate launchDate;
 
-    public ContainerShip(String name) {
+    public ContainerShip(String name, LocalDate launchDate) {
         this.name = name;
+        this.launchDate = launchDate;
     }
 
     public String getName() {
@@ -16,7 +18,7 @@ public class ContainerShip {
 
     public LocalDate getLaunchDate() {
 
-        return LocalDate.of(2012,11,6);
+        return launchDate;
 
     }
 
