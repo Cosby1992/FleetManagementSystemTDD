@@ -51,5 +51,17 @@ public class ContainerShip {
         return status;
     }
 
+    public void setStatus(Status status) {
+
+        switch(status){
+
+            case DOCKED_AT_HOME: if(this.status != Status.DOCKED_AWAY){this.status = status;} break;
+            case DOCKED_AWAY: if(this.status != Status.DOCKED_AT_HOME) {this.status = status;} break;
+            case ON_VOYAGE: this.status = status;
+
+        }
+
+    }
+
 
 }
