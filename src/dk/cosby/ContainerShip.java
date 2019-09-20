@@ -19,4 +19,8 @@ public class ContainerShip {
         return LocalDate.of(2012,11,6);
 
     }
+
+    public int getDeadweightTonnage() {
+        return 187625;
+    }
 }
