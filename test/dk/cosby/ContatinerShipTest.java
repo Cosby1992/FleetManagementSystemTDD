@@ -13,9 +13,9 @@ public class ContatinerShipTest {
     @Test
     void createContainerShip1(){
 
-        ContainerShip containerShip = new ContatinerShip("Marco Polo");
+        ContainerShip containerShip = new ContainerShip("Marco Polo");
 
-        assertEquals("Marco Polo", ContatinerShip.getName());
+        assertEquals("Marco Polo", containerShip.getName());
 
 
     }
