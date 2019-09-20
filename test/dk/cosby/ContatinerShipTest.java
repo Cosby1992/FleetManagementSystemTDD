@@ -63,10 +63,17 @@ public class ContatinerShipTest {
 
         assertEquals(Status.DOCKED_AT_HOME, containerShip.getStatus());
 
-        containerShip.setStatus(Status.ON_VOYAGE);
+        containerShip.setStatus(Status.DOCKED_AWAY);
+        assertEquals(Status.DOCKED_AT_HOME, containerShip.getStatus());
 
+        containerShip.setStatus(Status.ON_VOYAGE);
         assertEquals(Status.ON_VOYAGE, containerShip.getStatus());
 
+        containerShip.setStatus(Status.DOCKED_AWAY);
+        assertEquals(Status.DOCKED_AWAY, containerShip.getStatus());
+
+        containerShip.setStatus(Status.DOCKED_AT_HOME);
+        assertEquals(Status.DOCKED_AWAY, containerShip.getStatus());
 
     }
 
