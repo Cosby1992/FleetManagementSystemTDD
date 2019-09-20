@@ -1,5 +1,7 @@
 package dk.cosby;
 
+import java.time.LocalDate;
+
 public class ContainerShip {
 
     private String name;
@@ -12,4 +14,9 @@ public class ContainerShip {
         return name;
     }
 
+    public LocalDate getLaunchDate() {
+
+        return LocalDate.of(2012,11,6);
+
+    }
 }
