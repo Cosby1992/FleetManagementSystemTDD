@@ -16,7 +16,7 @@ public class ContatinerShipTest {
     @Test
     void createContainerShip1(){
 
-        ContainerShip containerShip = new ContainerShip("Marco Polo", LocalDate.of(2012, 11, 6));
+        ContainerShip containerShip = new ContainerShip("Marco Polo", LocalDate.of(2012, 11, 6), 187625);
 
         assertEquals("Marco Polo", containerShip.getName());
         assertEquals(LocalDate.of(2012,11,6), containerShip.getLaunchDate());
@@ -30,7 +30,7 @@ public class ContatinerShipTest {
     @Test
     void createContainerShip2(){
 
-        ContainerShip containerShip = new ContainerShip("Hansa Carrier", LocalDate.of(1989, 2, 1));
+        ContainerShip containerShip = new ContainerShip("Hansa Carrier", LocalDate.of(1989, 2, 1), 26366);
 
         assertEquals("Hansa Carrier", containerShip.getName());
         assertEquals(LocalDate.of(1989,2,1), containerShip.getLaunchDate());
