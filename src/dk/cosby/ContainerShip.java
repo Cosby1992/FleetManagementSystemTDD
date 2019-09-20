@@ -31,4 +31,8 @@ public class ContainerShip {
     public String getCargoDescription() {
         return "Empty";
     }
+
+    public Status getStatus() {
+        return Status.DOCKED_AT_HOME;
+    }
 }
