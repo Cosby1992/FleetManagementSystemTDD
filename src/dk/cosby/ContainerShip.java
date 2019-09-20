@@ -25,6 +25,10 @@ public class ContainerShip {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public LocalDate getLaunchDate() {
 
         return launchDate;
@@ -46,4 +50,6 @@ public class ContainerShip {
     public Status getStatus() {
         return status;
     }
+
+
 }
