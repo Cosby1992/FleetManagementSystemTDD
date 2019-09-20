@@ -27,6 +27,20 @@ public class ContatinerShipTest {
 
     }
 
+    @Test
+    void createContainerShip2(){
+
+        ContainerShip containerShip = new ContainerShip("Hansa Carrier");
+
+        assertEquals("Hansa Carrier", containerShip.getName());
+//        assertEquals(LocalDate.of(2012,11,6), containerShip.getLaunchDate());
+//        assertEquals(187625, containerShip.getDeadweightTonnage());
+//        assertEquals(16020, containerShip.getContainerCount());
+//        assertEquals("Empty", containerShip.getCargoDescription());
+//        assertEquals(Status.DOCKED_AT_HOME, containerShip.getStatus());
+
+    }
+
 
 
 }
