@@ -17,7 +17,7 @@ public class ContatinerShipTest {
     void createContainerShip1(){
 
         ContainerShip containerShip = new ContainerShip("Marco Polo", LocalDate.of(2012, 11, 6), 187625,
-                16020);
+                16020, "Empty");
 
         assertEquals("Marco Polo", containerShip.getName());
         assertEquals(LocalDate.of(2012,11,6), containerShip.getLaunchDate());
@@ -32,7 +32,7 @@ public class ContatinerShipTest {
     void createContainerShip2(){
 
         ContainerShip containerShip = new ContainerShip("Hansa Carrier", LocalDate.of(1989, 2, 1), 26366,
-                1799);
+                1799, "Empty");
 
         assertEquals("Hansa Carrier", containerShip.getName());
         assertEquals(LocalDate.of(1989,2,1), containerShip.getLaunchDate());

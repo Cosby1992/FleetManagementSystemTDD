@@ -8,12 +8,15 @@ public class ContainerShip {
     private LocalDate launchDate;
     private int deadweightTonnage;
     private int containerCount;
+    private String cargoDescription;
 
-    public ContainerShip(String name, LocalDate launchDate, int deadweightTonnage, int containerCount) {
+
+    public ContainerShip(String name, LocalDate launchDate, int deadweightTonnage, int containerCount, String cargoDescription) {
         this.name = name;
         this.launchDate = launchDate;
         this.deadweightTonnage = deadweightTonnage;
         this.containerCount = containerCount;
+        this.cargoDescription = cargoDescription;
     }
 
     public String getName() {
@@ -35,7 +38,7 @@ public class ContainerShip {
     }
 
     public String getCargoDescription() {
-        return "Empty";
+        return cargoDescription;
     }
 
     public Status getStatus() {
