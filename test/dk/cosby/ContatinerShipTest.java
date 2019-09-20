@@ -33,7 +33,7 @@ public class ContatinerShipTest {
         ContainerShip containerShip = new ContainerShip("Hansa Carrier");
 
         assertEquals("Hansa Carrier", containerShip.getName());
-//        assertEquals(LocalDate.of(2012,11,6), containerShip.getLaunchDate());
+        assertEquals(LocalDate.of(1989,2,1), containerShip.getLaunchDate());
 //        assertEquals(187625, containerShip.getDeadweightTonnage());
 //        assertEquals(16020, containerShip.getContainerCount());
 //        assertEquals("Empty", containerShip.getCargoDescription());
